@@ -1,6 +1,8 @@
 # pass-locker
 * This is a Python application that allows a user to generate and store passwords for various accounts.
 
+## Built By [Andason Okinyi](https://github.com/opanga77/)
+
 ## Prerequisites
 * python 3.6
 
@@ -15,3 +17,8 @@
 
 ## Technologies Used
 * python3.6
+
+
+## License
+
+* Copyright (c) 2020 [Andason Okinyi](https://github.com/opanga77/)
