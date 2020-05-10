@@ -1,5 +1,5 @@
 '''
-Credential Module by Carol Wanjohi
+Credential Module
 Import random and string modules from Python for generating passwords
 # Import User from user module to get access to a user
 '''
