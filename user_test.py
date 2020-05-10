@@ -20,7 +20,7 @@ class TestUser(unittest.TestCase):
         '''
 
         # Create user object
-        self.new_user = User("John","doe")
+        self.new_user = User("Peter","makau")
 
 
     def tearDown(self):
@@ -35,8 +35,8 @@ class TestUser(unittest.TestCase):
         Test case to test if the object is initialised properly
         '''
 
-        self.assertEqual( self.new_user.user_name, "John" )
-        self.assertEqual( self.new_user.user_password, "doe" )
+        self.assertEqual( self.new_user.user_name, "Peter" )
+        self.assertEqual( self.new_user.user_password, "makau" )
 
     def test_save_user(self):
         '''
@@ -56,7 +56,7 @@ class TestUser(unittest.TestCase):
         # Save the new user
         self.new_user.save_user()
 
-        test_user = User("Jane","doey")
+        test_user = User("Peta","mark")
 
         test_user.save_user()
 
@@ -70,7 +70,7 @@ class TestUser(unittest.TestCase):
         # Save the new user
         self.new_user.save_user()
 
-        test_user = User("Jane","doey")
+        test_user = User("Peta","mark")
 
         test_user.save_user()
 
@@ -86,11 +86,11 @@ class TestUser(unittest.TestCase):
         # Save the new user
         self.new_user.save_user()
 
-        test_user = User("Jane","doey")
+        test_user = User("Peta","mark")
 
         test_user.save_user()
 
-        found_credential = User.log_in("Jane", "doey")
+        found_credential = User.log_in("Peta", "mark")
 
         self.assertEqual( found_credential,  Credential.credential_list )   
     
@@ -110,12 +110,12 @@ class TestUser(unittest.TestCase):
         # Save the new user
         self.new_user.save_user()
 
-        test_user = User("Jane","doey")
+        test_user = User("Peta","mark")
 
         test_user.save_user()
         
         # use contact exist method
-        user_exists = User.user_exist("Jane")
+        user_exists = User.user_exist("Peta")
         
         self.assertTrue(user_exists)
 
