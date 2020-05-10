@@ -4,6 +4,12 @@
 ## Prerequisites
 * python 3.6
 
+## User Stories
+* As a user I would like:
+
+* To create an account with my details - log in and password
+* Store my existing login credentials
+* Generate a password for a new credential
 ## Setup Requirements
 * Clone this repository and run the run.py file.
 
