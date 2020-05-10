@@ -1,7 +1,7 @@
  
 #!/usr/bin/env python3.6
 '''
-Run Module by Carol Wanjohi
+Run Module 
 This is the file that runs the application
 Import User Class from User Module and Credential Class from Credential Module
 '''
