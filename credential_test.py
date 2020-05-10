@@ -19,7 +19,7 @@ class TestCredential(unittest.TestCase):
         '''
 
         # Create credential object
-        self.new_credential = Credential("doe","Yahoo","yahoo17")
+        self.new_credential = Credential("makau","Yahoo","yahoo17")
 
     def tearDown(self):
         '''
@@ -32,7 +32,7 @@ class TestCredential(unittest.TestCase):
         '''
         Test case to test if the object is initialised properly
         '''
-        self.assertEqual( self.new_credential.user_password, "doe")
+        self.assertEqual( self.new_credential.user_password, "makau")
         self.assertEqual( self.new_credential.credential_name, "Yahoo" )
         self.assertEqual( self.new_credential.credential_password, "yahoo17" )
 
@@ -77,15 +77,15 @@ class TestCredential(unittest.TestCase):
         # Save the new credential
         self.new_credential.save_credential()
 
-        test_credential = Credential("doe2","Facebook","facebook17")
+        test_credential = Credential("makau2","Facebook","facebook17")
 
         test_credential.save_credential()
 
-        test_credential = Credential("doe2","Yahoo","yahoo17")
+        test_credential = Credential("makau2","Yahoo","yahoo17")
 
         test_credential.save_credential()
         
-        self.assertEqual( len(Credential.display_credential("doe2")) , 2 )
+        self.assertEqual( len(Credential.display_credential("makau2")) , 2 )
         
     def test_credential_exist(self):
         
@@ -96,7 +96,7 @@ class TestCredential(unittest.TestCase):
         # Save the new credential
         self.new_credential.save_credential()
 
-        test_credential = Credential("doe2","Facebook","facebook17")
+        test_credential = Credential("makau2","Facebook","facebook17")
 
         test_credential.save_credential()
         
